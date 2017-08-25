@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+}
+
+body {
+  font-family: 'Lucida Grande ', Verdana, Arial, sans-serif;
+  text-align: center;
+  color: #000000;
+}
+
+h1 {
+  font-size: 28px;
+  padding-top: 78px;
+  padding-bottom: 26px;
+}
+
+h2 {
+  padding-top: 26px;
+  font-size: 22px;
+  color: #000000;
+  border-bottom: 1px solid #666666;
+  clear: both;
+}
+
+a {
+  color: #000000;
+  text-decoration: none; 
+}
+
+a:hover {
+  text-decoration: underline; 
+}
+
+.header,
+.contents,
+.footer {
+  margin: 0 auto;
+  width: 640px;
+  text-align: left;
+  clear: both;
+}
+
+.contents {
+  clear: both;
+}
+
+.contents-inner {
+}
+
+.content {
+  width: 640px;
+  clear: both;
+  padding-top: 12px;
+}
+
+.content-inner {
+  width: 600px;
+}
+
+.content-inner-left {
+  width: 300px;
+  float: left;              
+}
+
+.content-inner-right {
+  width: 300px;
+  float: right;              
+}
+
+.content-image {
+  display: block;                
+  width: 115px;                
+  clear: both;
+  float: left; 
+}
+
+.content-image img {
+  width: 110px;
+  border: 1px solid #cccccc;
+}
+
+.description {
+  width: 180px;
+  float: right;
+} 
+
+.description-wide {
+  width: 480px;
+}
+
+.description h3 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  margin-top: 4px
+  margin-bottom: 4px;
+}
+
+.description p {
+  font-size: 11px;
+  line-height: 15px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #4c4c4c;
+}
+
+.description p a {
+  color: #0088cc;
+}
+
+.description ul {
+  font-size: 11px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.description li {
+  list-style-type: none;
+  margin-top: 4px;
+}
+
+.description li a {
+  color: #0088cc;
+}
+
+.footer {
+  padding-top: 52px;
+  padding-bottom: 26px;
+}
+
+address {
+  color: #888888;
+  border-top: 1px solid #cccccc;
+  padding-top: 3px;
+  font-size: 11px;
+  font-style: normal;
+}
+
+.contact li {
+  font-size: 11px;
+  line-height: 15px;
+  margin-bottom: 8px;
+  color: #4c4c4c;
+  list-style-type: none;
+}
+
+.contact li a {
+  color: #0088cc;
+}
+
+/*
+     FILE ARCHIVED ON 18:10:11 Apr 04, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:49:31 Aug 25, 2017.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
