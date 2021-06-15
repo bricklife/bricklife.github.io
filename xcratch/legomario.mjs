@@ -23,6 +23,7 @@ var entry = {
   insetIconURL: img$2,
   description: /*#__PURE__*/React.createElement(FormattedMessage, {
     defaultMessage: "Play with LEGO Mario.",
+    description: "",
     id: "gui.extension.legomario.description"
   }),
   featured: true,
