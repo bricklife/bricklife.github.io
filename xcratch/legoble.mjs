@@ -8274,7 +8274,7 @@ var img = "data:image/svg+xml,%3csvg width='204' height='72' viewBox='0 0 204 72
 var entry = {
   name: 'LEGO BLE Device',
   extensionId: 'legoble',
-  extensionURL: 'https://champierre.github.io/ml2scratch/dist/ml2scratch.mjs',
+  extensionURL: 'https://bricklife.com/xcratch/legoble.mjs',
   collaborator: 'bricklife',
   iconURL: img$2,
   insetIconURL: img$1,
@@ -18637,7 +18637,7 @@ var formatMessage = formatMessage$1;
  * @type {string}
  */
 
-var extensionURL = 'https://champierre.github.io/ml2scratch/dist/ml2scratch.mjs';
+var extensionURL = 'https://bricklife.com/xcratch/legoble.mjs';
 
 var Scratch3LegoBleBlocks = /*#__PURE__*/function (_BleBaseBlocks) {
   _inherits(Scratch3LegoBleBlocks, _BleBaseBlocks);
