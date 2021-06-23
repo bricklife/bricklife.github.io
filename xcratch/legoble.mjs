@@ -8274,6 +8274,7 @@ var img = "data:image/svg+xml,%3csvg width='204' height='72' viewBox='0 0 204 72
 var entry = {
   name: 'LEGO BLE Device',
   extensionId: 'legoble',
+  extensionURL: 'https://champierre.github.io/ml2scratch/dist/ml2scratch.mjs',
   collaborator: 'bricklife',
   iconURL: img$2,
   insetIconURL: img$1,
@@ -18670,7 +18671,7 @@ var Scratch3LegoBleBlocks = /*#__PURE__*/function (_BleBaseBlocks) {
       return {
         id: Scratch3LegoBleBlocks.EXTENSION_ID,
         name: 'LEGO BLE',
-        extensionURL: Scratch3ML2ScratchBlocks.extensionURL,
+        extensionURL: Scratch3LegoBleBlocks.extensionURL,
         blockIconURI: blockIconURI,
         showStatusButton: true,
         blocks: this.getBlocks(formatMessage),
