@@ -3,7 +3,7 @@
 <body>
 
     <div><button type="button" onclick="start()">Start</button></div>
-    <div><textarea id="log" style="width: 100%; height: 200px;"></textarea></div>
+    <div><textarea id="log" style="width: 95%; height: 95%;"></textarea></div>
 
     <script>
         function log(x) {
@@ -24,7 +24,7 @@
                     if (!e.results[i].isFinal) continue;
 
                     const { transcript } = e.results[i][0];
-                    log(`Recognised: ${transcript}`);
+                    log(`> ${transcript}`);
                 }
 
                 rec.stop();
@@ -41,6 +41,9 @@
 
             rec.onaudiostart = () => { log('onaudiostart') }
             rec.onaudioend = () => { log('onaudioend') }
+
+            rec.onerror = (event) => { log('onerror: ' + event.error) }
+            rec.onnomatch = () => { log('onnomatch') }
 
             rec.start();
             log('function end');
