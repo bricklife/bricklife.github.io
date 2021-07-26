@@ -14,7 +14,18 @@
         function start() {
             log('function start');
 
-            const _SpeechRecognition = webkitSpeechRecognition || SpeechRecognition;
+            let _SpeechRecognition;
+            if (typeof webkitSpeechRecognition !== 'undefined') {
+                _SpeechRecognition = webkitSpeechRecognition;
+                log('Using webkitSpeechRecognition');
+            } else if (typeof SpeechRecognition !== 'undefined') {
+                _SpeechRecognition = SpeechRecognition;
+                log('Using SpeechRecognition');
+            } else {
+                log('SpeechRecognition API is not supported');
+                return;
+            }
+
             const rec = new _SpeechRecognition();
 
             rec.onresult = (e) => {
@@ -46,7 +57,7 @@
             rec.onnomatch = () => { log('onnomatch') }
 
             rec.start();
-            
+
             log('function end');
         }
     </script>
