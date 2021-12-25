@@ -8,7 +8,7 @@
             alert('Hello');
         }
         function showComfirm() {
-            let res = confirm('Do you have any pen?');
+            let res = confirm('Cancel or OK?');
             alert(res);
         }
         function showPrompt() {
@@ -37,15 +37,18 @@
             uploadWindow.document.open();
             uploadWindow.document.write('<html><head><title>upload test</title></head><body>');
             uploadWindow.document.write('<input type="file" id="upload-files">');
-            uploadWindow.document.write('<input type="button" value="Upload" id="upload-button">');
-            uploadWindow.document.write('<div><button onclick="alert(123)">alert</button></div>');
+            uploadWindow.document.write('<input type="button" value="upload" id="upload-button">');
             uploadWindow.document.write('</body></html>');
             uploadWindow.document.close();
 
-            uploadWindow.document.getElementById("upload-button").onclick = () => {
+            uploadWindow.document.getElementById('upload-button').onclick = () => {
                 let count = uploadWindow.document.getElementById('upload-files').files.length;
-                uploadWindow.close();
-                alert(count);
+                if (count > 0) {
+                    uploadWindow.close();
+                    alert(count);
+                } else {
+                    uploadWindow.alert('Select any file');
+                }
             };
         }
     </script>
