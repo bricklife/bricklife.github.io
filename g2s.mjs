@@ -14005,7 +14005,7 @@ var FirmataBoard = /*#__PURE__*/function (_EventEmitter) {
 
               case 12:
                 _context.next = 14;
-                return navigator.serial.requestPort(options);
+                return navigator.serial.requestPort();
 
               case 14:
                 nativePort = _context.sent;
